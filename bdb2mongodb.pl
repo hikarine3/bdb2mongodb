@@ -34,13 +34,21 @@ perl bdb2mongodb/bdb2mongodb.pl --database=sakuhindb --file=/www/data/bdb/anime/
 
 ## Parameters
 --database=... Mandatory
+
 --debug Optional: More info will be shown in the process
+
 --drop or --initialize Optional: Drop the collection if exist
+
 --file=... Mandatory: value for the input of BerkeleyDB
+
 --key=... Optional: If the value is blank, "bdbKey" will be used key name of Berkeley DB's key's name. Index will be added to "bdbKey" automatically
+
 --mongoport=... Optional: If the value is blank, 27017 will be used.
+
 --mongoserver=... Optional: If the value is blank, localhost will be used.
+
 --table= or --collection=... Optional: If the value is blank, the name of bdb file will be used for table name
+
 --key=... Optional: If the value is blank, "bdbValue" will be used key name of Berkeley DB's value's name
 EOF
     exit;
